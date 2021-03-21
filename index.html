@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- FORM  -->
+        <form>
+            <div class="search-bar">
+                <input id="city-input" type="search" placeholder="ENTER CITY">
+                <div class="icon"><img src="./magnifying-glass.svg" width="40"></div>
+            </div>
+        </form>
+
+        <!-- CITY & WEATHER -->
+        <h1 id="city">Riyadh</h1>
+        <p id="weather">Overcast Clouds</p>
+
+
+        <!-- TEMPERATURE -->
+        <div class="temp">
+            <div id="current">20<sup>°</sup></div>
+            <div class="minmax">
+                <div id="min">19<sup>°</sup></div>
+                <hr>
+                <div id="max">20<sup>°</sup></div>
+            </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="info">
+            <div class="details">
+                <div id="wind">Wind 2.1 m/s</div>
+                <div id="humidity">Humidity 93%</div>
+                <div id="pressure">Pressure 991 hPa</div>
+            </div>
+            <img src="http://openweathermap.org/img/wn/01n@2x.png" id="weather-icon" width="150">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

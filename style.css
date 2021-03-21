@@ -1,0 +1,90 @@
+body{
+    background-image: url('diff_weather.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    font-size: 15px;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 330px;
+    min-height: 80vh;
+    background: rgba(0, 0, 0, 0.685) 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 50px #3d3141;
+    text-align: center;
+    padding: 60px;
+}
+
+/* ========== FORM ==========  */
+.search-bar{
+    background: rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #313B45;
+    display: flex; justify-content: space-between;
+    padding: 2px 10px;
+}
+
+.search-bar input{
+    flex:1; 
+    background: transparent;
+    border:none; 
+    outline: none;
+    font-size: 15px;
+    color: #eee;
+
+}
+.search-bar input::placeholder{
+    font-size: 15px;
+}
+
+.search-bar .icon{
+    cursor: pointer;
+}
+.search-bar .icon:active{
+    outline: 1px solid blue;
+}
+
+/* ========== CITY ==========  */
+#city{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+/* ========== TEMPERATURE ==========  */
+.temp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temp #current{
+    font-size: 120px;
+}
+
+/* ========== INFO ==========  */
+.info{
+    background: hsla(0, 0%, 77%, 10%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px #313B45;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 40px;
+    height: 100px;
+    padding: 25px 0;
+}
+.info .details{
+    height: 100%;
+    text-align: left;
+    display: flex; flex-direction: column;justify-content: space-between;
+    margin-left: 25px;
+}
+.info img{
+    filter: drop-shadow(0px 0px 10px #707070);
+}
